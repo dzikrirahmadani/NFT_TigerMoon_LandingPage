@@ -1,0 +1,573 @@
+@font-face {
+    font-family: 'inter';
+    src: url(../fonts/Inter-Light.woff);
+}
+
+@font-face {
+    font-family: 'monument';
+    src: url(../fonts/MonumentExtended-Regular.woff);
+}
+
+:root {
+    /* GREEN */
+    --green-950: #052e16;
+    /* EMERALD */
+    --emerald-950: #022c22;
+    --emerald-900: #064e3b;
+    --emerald-600: #059669;
+    /* TEAL */
+    --teal-950: #042f2e;
+    --teal-800 :#115e59;
+    /* YELLOW */
+    --yellow-900: #713f12;
+    --yellow-800: #854d0e;
+    --yellow-700: #a16207;
+    /* SKY */
+    --sky-700: #0369a1;
+    /* CYAN */
+    --cyan-800: #155e75;
+    /* GRADIENT */
+    --text-gradient: linear-gradient(to top #022019, var(--emerald-950));
+}
+
+/* NAVBAR */
+
+.navbar-top {
+    font-family: inter;
+    padding: 15px;
+    border-bottom: 1px solid #323232;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.navbar-nav .link {
+    margin-right: 20px;
+}
+
+.btn-nav {
+    background-color: var(--emerald-600);
+    border: 1px solid var(--emerald-600);
+    border-radius: 25px;
+    width: 100px;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.btn-nav:hover {
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid white;
+    width: 100px;
+    color: white;
+}
+
+.navbar-collapse-top {
+    display: flex;
+    justify-content: end;
+
+    @media screen and (max-width: 991px) {
+        justify-content: start;
+    }
+
+}
+
+.scrolling-active {
+    background-color:rgba(6, 78, 59, .5);
+    backdrop-filter: blur(10px);
+}
+
+/* END NAVBAR */
+
+/* HERO */
+
+#hero {
+    background-image: linear-gradient(to top right, black 1%, var(--emerald-900));
+    height: 120%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.col-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    background-image: linear-gradient(to right, var(--teal-800), black );
+    width: 25%;
+    margin: 20px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+
+    @media screen and (max-width: 991px) {
+        width: 40%;
+    }
+
+    @media screen and (max-width: 640px) {
+        width: 60%;
+    }
+
+}
+
+.row-head {
+    margin-top: 50px;
+    
+    @media screen and (max-width: 640px) {
+        margin-top: 100px;
+    }
+
+}
+
+.h-hero1 {
+    font-family: monument;
+    z-index: 1;
+    margin-top: -200px;
+
+    @media screen and (max-width: 390px) {
+        margin-left: 5%;
+    }
+
+    @media screen and (max-width: 374px) {
+        margin-left: 10%;
+        margin-top: -100px;
+    }
+    
+    @media screen and (max-width: 350px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 30px;
+    }
+
+}
+
+.h-hero2 {
+    font-family: monument;
+    z-index: 1;
+    margin-top: 200px;
+
+    @media screen and (max-width: 374px) {
+        margin-top: 100px;
+    }
+
+    @media screen and (max-width: 350px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 30px;
+    }
+
+}
+
+.join-telegram {
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1.5px solid var(--emerald-600);
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin-top: 50px;
+    transition: .3s;
+}
+
+.join-telegram:hover {
+    border-radius: 25px;
+    background-color: #059669;
+    border: 1.5px solid #059669;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.bi-arrow-up-right {
+    font-size: 12px;
+}
+
+.member {
+    margin-top: 70px;
+}
+
+.member img{
+    border-radius: 50%;
+}
+
+/* END HERO */
+
+/* TRUST */
+
+#trust {
+    background-color: black;
+}
+
+.kotak-trust {
+    width: 90%;
+    height: 100%;
+    background-image: linear-gradient(to right, #191919 1%, var(--emerald-950));
+    border-radius: 25px;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.header {
+    font-family: monument;
+    @media screen and (max-width: 350px) {
+        font-size: 25px;
+    }
+    @media screen and (max-width: 279px) {
+        font-size: 20px;
+    }
+}
+
+.learn a {
+    text-decoration: none;
+}
+
+.company {
+    margin-top: 20px;
+    height: 75px;
+    background-image: linear-gradient(to right, var(--cyan-800) -50%, #022019 70%);
+    border-radius: 10px;
+}
+
+/* END TRUST */
+
+/* COLLECTION */
+
+#collection {
+    background-color: black;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.overflow {
+    overflow: hidden;
+    width: 100%;
+}
+
+.overflow h1 {
+    font-family: monument;
+    font-weight: bold;
+    font-size: 113px;
+    color: var(--emerald-950);
+    opacity: 50%;
+    margin-top: 50px;
+}
+
+.h-title {
+    font-family: monument;
+    position: absolute;
+    margin-top: -70px;
+}
+
+h5.text-white {
+    font-family: monument;
+}
+
+.card-nft {
+    background-color: black;
+    border: 1.7px solid gray;
+    border-radius: 0;
+}
+
+.card-nft-mid {
+    background-color: var(--green-950);
+    border: 1.7px solid var(--green-950);
+    border-radius: 0;
+}
+
+button .carousel-control-prev-icon {
+    background-color: var(--emerald-600);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button .carousel-control-next-icon {
+    background-color: var(--emerald-600);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* END COLLECTION */
+
+/* ABOUT */
+
+#about {
+    height: 100%;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.h-title2 {
+    font-family: monument;
+}
+
+/* END ABOUT */
+
+/* CHOOSE */
+
+#choose {
+    background-color: black;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.h-titles {
+    margin-top: -70px;
+    position: relative;
+}
+
+.h-title2 {
+    font-family: monument;
+    text-align: center;
+}
+
+.kotak-circle {
+    margin-top: 100px;
+}
+
+.kotak-choose {
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to bottom right, #191919 40%, var(--emerald-950));
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 230px) {
+        height: 100px; 
+    }
+}
+
+.border-circle-choose {
+    border: 3px solid var(--emerald-600);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: -70px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 350px) {
+        width: 150px;
+        height: 150px; 
+    }
+
+    @media screen and (max-width: 230px) {
+        width: 100px;
+        height: 100px; 
+    }
+}
+
+.circle-choose {
+    background-color: #39200a;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.kotak-ket1 {
+    margin-top: 20px;
+    width: 10;
+    height: 467px;
+    background-image: linear-gradient(to bottom, #0f0f0f 40%, var(--emerald-950));
+    border-radius: 25px;
+    border-right: 2px solid #2d2d2d;
+
+    @media screen and (max-width: 1199px) {
+        height: 499px;
+    }
+
+    @media (max-width: 768px) { 
+        height: 250px;
+     }
+
+}
+.kotak-ket2 {
+    margin-top: 20px;
+    width: 10;
+    height: 467px;
+    background-image: linear-gradient(to top, #0f0f0f 40%, var(--emerald-950));
+    border-radius: 25px;
+    border-right: 2px solid #2d2d2d;
+
+    @media screen and (max-width: 1199px) {
+        height: 499px;
+    }
+
+    @media (max-width: 768px) { 
+        height: 250px;
+     }
+
+}
+.kotak-ket3 {
+    margin-top: 20px;
+    width: 10;
+    height: 467px;
+    background-image: linear-gradient(to bottom, #0f0f0f 40%, var(--emerald-950));
+    border-radius: 25px;
+    border-right: 2px solid #2d2d2d;
+
+    @media screen and (max-width: 1199px) {
+        height: 499px;
+    }
+
+    @media (max-width: 768px) { 
+        height: 250px;
+     }
+
+}
+
+/* .kotak-ket-inner {
+    border: 1px solid white;
+    height: 200px;
+    @media (max-width: 768px) { 
+        height: 50px;
+        margin-bottom: 60px;
+     }
+} */
+
+.circle-rotate {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(6, 78, 59, .2);
+}
+
+.circle-rotate-end {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(3, 105, 161, .2);
+}
+
+.text-rotate {
+    rotate: 90deg;
+    /* border: 1px solid white; */
+    width: 300px;
+    margin-top: 120px;
+    margin-left: -50px;
+    @media (max-width: 768px) {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%; 
+        rotate: 0deg;
+        text-align: center;
+     }
+}
+
+.bi-currency-dollar, .bi-lock-fill {
+    color: var(--emerald-600);
+    font-size: 30px;
+}
+
+.bi-currency-bitcoin {
+    color: var(--sky-700);
+    font-size: 30px;
+}
+
+.kotak-ket a {
+    text-decoration: none;
+}
+
+/* END CHOOSE */
+
+/* HOW TO BUY */
+
+#faq {
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.kotak-wallet {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #191919 1%, var(--emerald-950));
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.h4-faq {
+    font-family: monument;
+
+    @media screen and (max-width: 280px) {
+        font-size: 15px;
+    }
+}
+
+.kotak-faq {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 30px;
+    background-image: linear-gradient(to bottom right, #191919 1%, var(--emerald-950));
+}
+
+/* .faq-setting {
+    border: 1px solid white;
+} */
+
+/* END HOW TO BUY */
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    background-image: linear-gradient(to bottom, transparent 1%, var(--emerald-950));
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-join {
+    font-family: monument;
+}
+
+.footer-line {
+    color: white;
+    width: 50%;
+}
+
+.bi-play-fill {
+    font-size: 80px;
+    color: var(--emerald-600);
+}
+
+.nav-bottom {
+    /* border: 1px solid white; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 640px) {
+        display: block;
+    }
+}
+
+.link-bottom {
+    @media screen and (max-width: 640px) {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.nav-bottom a {
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+/* END FOOTER */
